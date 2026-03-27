@@ -16,7 +16,7 @@ layers:
   - {t: D, h: LEFT SHIFT}
   - {t: F, h: LEFT CONTROL}
   - {t: G, h: LEFT GUI}
-  - '&mkp LCLK'
+  - {t: ▽, type: trans}
   - {t: H, h: RIGHT GUI}
   - {t: J, h: RIGHT CONTROL}
   - {t: K, h: RIGHT SHIFT}
@@ -27,12 +27,12 @@ layers:
   - C
   - V
   - B
-  - '&mkp RCLK'
-  - '&mkp MCLK'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - N
   - M
-  - ','
-  - .
+  - '&mkp LCLK'
+  - '&mkp RCLK'
   - /
   - {t: LANG2, h: FUNCTION}
   - LEFT GUI
@@ -273,5 +273,3 @@ combos:
   k: LEFT SHIFT
 - p: [39, 40]
   k: RIGHT SHIFT
-- p: [6, 7, 8]
-  k: {t: default, h: toggle}
