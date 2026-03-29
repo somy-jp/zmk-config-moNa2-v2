@@ -103,6 +103,18 @@
 
             tap-ms = <20>;
         };
+
+        volume_up_down: volume_up_down {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&kp C_VOL_UP>, <&kp C_VOL_DN>;
+        };
+
+        mission_app: mission_app {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&kp LC(UP)>, <&kp LC(DOWN)>;
+        };
     };
 
     combos {
@@ -185,7 +197,7 @@
 &trans  &trans  &trans  &kp LEFT_BRACKET                      &kp RIGHT_BRACKET      &kp LS(LA(SPACE))               &kp KP_N0         &kp KP_N0                                          &kp KP_DOT
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&volume_up_down>;
         };
 
         FUNCTION {
@@ -197,7 +209,7 @@
 &trans  &trans   &kp KP_NUMLOCK  &kp CAPSLOCK  &kp LA(LC(DELETE))    &bt BT_CLR                &trans          &bt BT_CLR_ALL                                               &trans
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&mission_app>;
         };
 
     };
