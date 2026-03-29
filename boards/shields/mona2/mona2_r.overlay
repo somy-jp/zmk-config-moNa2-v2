@@ -70,7 +70,7 @@
 &pointer_accel {
     input-type = <INPUT_EV_REL>;
     track-remainders;
-    min-factor = <150>;
+    min-factor = <180>;
     max-factor = <800>;
     speed-threshold = <700>;
     speed-max = <800>;
@@ -81,7 +81,7 @@
   zip_keybind_page: zip_keybind_page {
     compatible = "zmk,input-processor-keybind";
     #input-processor-cells = <0>;
-    bindings = <&none>, <&none>, <&kp PG_UP>, <&kp PG_DN>;
+    bindings = <&none>, <&none>, <&kp PG_DN>, <&kp PG_UP>;
     mode = <1>;
     tick = <40>;
   };
