@@ -7,7 +7,6 @@
 #include <dt-bindings/zmk/pointing.h>
 
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 100
-#define SCROLL 4
 
 &mt {
     quick-tap-ms = <0>;
@@ -156,7 +155,7 @@
 
         default_layer {
             bindings = <
-&kp Q        &kp W               &kp E                &kp R                  &kp T                                                                &lt_scroll 4 Y       &kp U                   &kp I                 &kp O                &kp P
+&kp Q        &kp W               &kp E                &kp R                  &kp T                                                                &lt_scroll 3 Y       &kp U                   &kp I                 &kp O                &kp P
 &kp A        &hmr_l2 LEFT_ALT S  &hmr_l LEFT_SHIFT D  &hmr_l LEFT_CONTROL F  &hmr_l2 LEFT_GUI G                 &mkp LCLK                         &hmr_r2 RIGHT_GUI H  &hmr_r RIGHT_CONTROL J  &hmr_r RIGHT_SHIFT K  &hmr_r2 RIGHT_ALT L  &kp MINUS
 &kp Z        &kp X               &kp C                &kp V                  &kp B              &mkp RCLK        &mkp MCLK                         &kp N                &kp M                   &kp COMMA             &kp PERIOD           &kp SLASH
 &lt 3 LANG2  &kp LEFT_GUI        &mt LEFT_ALT LANG2   &lt 1 SPACE            &lt 2 TAB          &lt 2 BACKSPACE  &lt 1 ENTER                       &mt RIGHT_ALT LANG1                                                                    &lt 3 LANG1
@@ -201,15 +200,5 @@
             sensor-bindings = <&scroll_up_down>;
         };
 
-        SCROLL {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                            &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans                          &trans
-            >;
-
-            sensor-bindings = <&scroll_up_down>;
-        };
     };
 };

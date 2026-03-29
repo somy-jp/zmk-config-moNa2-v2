@@ -98,7 +98,7 @@
         <&pointer_accel>;
 
     scroller {
-        layers = <4>;
+        layers = <3>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_X_INVERT>,       //X軸反転
             <&zip_x_scaler 0 1>,
@@ -120,7 +120,7 @@
     };
 
     prevent-move {
-        layers = <1 2 4>;
+        layers = <1 2 3>;
         input-processors = <&zip_xy_scaler 0 1>;
     };
 };
