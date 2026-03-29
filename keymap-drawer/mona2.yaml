@@ -72,10 +72,10 @@ layers:
   - '`'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - ':'
-  - ;
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - (
+  - )
+  - '['
+  - ']'
   - \
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -93,10 +93,10 @@ layers:
   - <
   - '>'
   - '%'
-  - KP 7
-  - KP 8
-  - KP 9
-  - KP PLUS
+  - '7'
+  - '8'
+  - '9'
+  - +
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -104,10 +104,10 @@ layers:
   - )
   - {t: ▽, type: trans}
   - ':'
-  - KP 4
-  - KP 5
-  - KP 6
-  - KP MINUS
+  - '4'
+  - '5'
+  - '6'
+  - '-'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -115,11 +115,11 @@ layers:
   - '}'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - KP MULTIPLY
-  - KP 1
-  - KP 2
-  - KP 3
-  - KP SLASH
+  - '*'
+  - '1'
+  - '2'
+  - '3'
+  - /
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -127,30 +127,30 @@ layers:
   - '['
   - {t: ']', type: held}
   - Sft+Alt+SPACE
-  - KP 0
-  - KP DOT
+  - '0'
+  - .
   FUNCTION:
   - F1
   - F2
   - F3
   - F4
   - Ctl+Sft+3
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
-  - {t: BT, h: '3'}
-  - {t: BT, h: '4'}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - F5
   - F6
   - F7
   - F8
   - Sft+Ctl+4
   - {t: ▽, type: trans}
-  - {t: BT DISC, h: '0'}
-  - {t: BT DISC, h: '1'}
-  - {t: BT DISC, h: '2'}
-  - {t: BT DISC, h: '3'}
-  - {t: BT DISC, h: '4'}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - F9
   - F10
   - F11
@@ -166,15 +166,56 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - KP NUMLOCK
+  - {t: ▽, type: trans}
   - CAPSLOCK
-  - Ctl+Alt+DELETE
-  - BT CLR
+  - Ctl+Alt+ESCAPE
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  BT:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
+  - {t: BT, h: '4'}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: BT DISC, h: '0'}
+  - {t: BT DISC, h: '1'}
+  - {t: BT DISC, h: '2'}
+  - {t: BT DISC, h: '3'}
+  - {t: BT DISC, h: '4'}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - BT CLR ALL
+  - BT CLR
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:
-- p: [0, 1]
-  k: ESC
 - p: [14, 25]
   k: ':'
 - p: [16, 28]
@@ -187,3 +228,5 @@ combos:
   k: LEFT SHIFT
 - p: [39, 40]
   k: RIGHT SHIFT
+- p: [30, 31]
+  k: '&mkp MCLK'
