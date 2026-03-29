@@ -134,9 +134,14 @@
             key-positions = <39 40>;
         };
 
-        cb_middle_click {
+        combo_middle_click {
             bindings = <&mkp MCLK>;
             key-positions = <30 31>;
+        };
+
+        combo_mo_4 {
+            bindings = <&mo 4>;
+            key-positions = <33 41>;
         };
     };
 
