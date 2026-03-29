@@ -206,6 +206,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -213,8 +214,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
 combos:
 - p: [14, 25]
   k: ':'
@@ -230,3 +230,5 @@ combos:
   k: RIGHT SHIFT
 - p: [30, 31]
   k: '&mkp MCLK'
+- p: [33, 41]
+  k: BT
