@@ -16,7 +16,7 @@ layers:
   - {t: D, h: LEFT SHIFT}
   - {t: F, h: LEFT CONTROL}
   - {t: G, h: LEFT GUI}
-  - {t: ▽, type: trans}
+  - GLOBE
   - {t: H, h: RIGHT GUI}
   - {t: J, h: RIGHT CONTROL}
   - {t: K, h: RIGHT SHIFT}
