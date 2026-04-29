@@ -12,7 +12,7 @@ layers:
   - O
   - P
   - A
-  - {t: S, h: LEFT ALT}
+  - S
   - {t: D, h: LEFT SHIFT}
   - {t: F, h: LEFT CONTROL}
   - {t: G, h: LEFT GUI}
@@ -20,7 +20,7 @@ layers:
   - {t: H, h: RIGHT GUI}
   - {t: J, h: RIGHT CONTROL}
   - {t: K, h: RIGHT SHIFT}
-  - {t: L, h: RIGHT ALT}
+  - L
   - '-'
   - Z
   - X
@@ -55,7 +55,7 @@ layers:
   - AltGr+RIGHT
   - Sft+Ctl+Gui+RIGHT
   - '@'
-  - {t: $, h: LEFT ALT}
+  - $
   - {t: '-', h: LEFT SHIFT}
   - {t: '=', h: LEFT CONTROL}
   - {t: '''', h: LEFT GUI}
